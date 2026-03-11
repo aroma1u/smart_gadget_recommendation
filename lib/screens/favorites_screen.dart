@@ -6,7 +6,7 @@ import '../models/gadget_model.dart';
 import '../widgets/gadget_card.dart';
 
 class FavoritesScreen extends ConsumerWidget {
-  const FavoritesScreen({Key? key}) : super(key: key);
+  const FavoritesScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

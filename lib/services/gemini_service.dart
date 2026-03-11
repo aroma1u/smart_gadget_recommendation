@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -231,7 +232,7 @@ class GeminiService {
       }
       return [];
     } catch (e) {
-      print('Gemini API Error: $e');
+      debugPrint('Gemini API Error: $e');
       throw Exception('Failed to get recommendations. Please try again: $e');
     }
   }

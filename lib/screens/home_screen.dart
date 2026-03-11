@@ -11,7 +11,7 @@ import '../widgets/gadget_card.dart';
 import '../widgets/mesh_gradient.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -44,7 +44,7 @@ class HomeScreen extends ConsumerWidget {
                       child: IconButton(
                         icon: CircleAvatar(
                           radius: 16,
-                          backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                          backgroundColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
                           backgroundImage: user?.photoUrl.isNotEmpty == true
                               ? NetworkImage(user!.photoUrl)
                               : null,
@@ -57,7 +57,7 @@ class HomeScreen extends ConsumerWidget {
                     );
                   },
                   loading: () => const Center(child: SizedBox(width: 40, child: CircularProgressIndicator(strokeWidth: 2))),
-                  error: (_, __) => IconButton(icon: const Icon(Icons.error_outline), onPressed: () {}),
+                  error: (_, _) => IconButton(icon: const Icon(Icons.error_outline), onPressed: () {}),
                 ),
               ],
             ),
@@ -88,18 +88,18 @@ class HomeScreen extends ConsumerWidget {
                   height: 520,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black.withValues(alpha: 0.1),
                   ),
                 ),
                 Positioned(
                   top: -50,
                   right: -50,
-                  child: _GlassDecorativeCircle(size: 200, color: Colors.white.withOpacity(0.1)),
+                  child: _GlassDecorativeCircle(size: 200, color: Colors.white.withValues(alpha: 0.1)),
                 ),
                 Positioned(
                   bottom: 20,
                   left: -30,
-                  child: _GlassDecorativeCircle(size: 150, color: Colors.white.withOpacity(0.05)),
+                  child: _GlassDecorativeCircle(size: 150, color: Colors.white.withValues(alpha: 0.05)),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 140, 24, 80),
@@ -109,9 +109,9 @@ class HomeScreen extends ConsumerWidget {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
+                            color: Colors.white.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(20),
-                            border: Border.all(color: Colors.white.withOpacity(0.2)),
+                            border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -346,13 +346,13 @@ class _CategoryItemState extends State<_CategoryItem> {
           duration: const Duration(milliseconds: 200),
           decoration: BoxDecoration(
             color: _isHovered 
-              ? Theme.of(context).colorScheme.primary.withOpacity(0.08)
+              ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.08)
               : Theme.of(context).cardTheme.color,
             borderRadius: BorderRadius.circular(24),
             border: Border.all(
               color: _isHovered 
-                ? Theme.of(context).colorScheme.primary.withOpacity(0.5)
-                : Theme.of(context).dividerTheme.color ?? Colors.grey.withOpacity(0.1),
+                ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.5)
+                : Theme.of(context).dividerTheme.color ?? Colors.grey.withValues(alpha: 0.1),
               width: 1.5,
             ),
           ),
@@ -367,7 +367,7 @@ class _CategoryItemState extends State<_CategoryItem> {
                   size: 36,
                   color: _isHovered 
                     ? Theme.of(context).colorScheme.primary 
-                    : Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+                    : Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
                 ),
               ),
               const SizedBox(height: 12),

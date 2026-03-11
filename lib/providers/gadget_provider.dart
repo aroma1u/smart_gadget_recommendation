@@ -1,6 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/gadget_model.dart';
-import '../services/firestore_service.dart';
 import 'auth_provider.dart';
 
 final dummyGadgets = [

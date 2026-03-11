@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,7 +9,7 @@ import '../widgets/tech_button.dart';
 
 class DetailsScreen extends ConsumerWidget {
   final String id;
-  const DetailsScreen({Key? key, required this.id}) : super(key: key);
+  const DetailsScreen({super.key, required this.id});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -220,7 +219,7 @@ class DetailsScreen extends ConsumerWidget {
               decoration: BoxDecoration(
                 color: Theme.of(context).cardColor,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Theme.of(context).dividerColor.withOpacity(0.05)),
+                border: Border.all(color: Theme.of(context).dividerColor.withValues(alpha: 0.05)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -267,7 +266,7 @@ class DetailsScreen extends ConsumerWidget {
           height: 56,
           width: 56,
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(16),
           ),
           child: IconButton(
@@ -295,7 +294,7 @@ class DetailsScreen extends ConsumerWidget {
                   decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.surface,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Theme.of(context).dividerColor.withOpacity(0.05)),
+                    border: Border.all(color: Theme.of(context).dividerColor.withValues(alpha: 0.05)),
                   ),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -338,7 +337,7 @@ class DetailsScreen extends ConsumerWidget {
                   decoration: BoxDecoration(
                     color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Theme.of(context).dividerColor.withOpacity(0.05)),
+                    border: Border.all(color: Theme.of(context).dividerColor.withValues(alpha: 0.05)),
                   ),
                   child: Column(
                     children: [

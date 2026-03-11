@@ -5,7 +5,7 @@ import '../providers/gadget_provider.dart';
 import 'package:go_router/go_router.dart';
 
 class ComparisonScreen extends ConsumerWidget {
-  const ComparisonScreen({Key? key}) : super(key: key);
+  const ComparisonScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -18,7 +18,7 @@ class ComparisonScreen extends ConsumerWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.compare_arrows_rounded, size: 80, color: Colors.grey.withOpacity(0.3)),
+              Icon(Icons.compare_arrows_rounded, size: 80, color: Colors.grey.withValues(alpha: 0.3)),
               const SizedBox(height: 16),
               Text('No gadgets selected', style: GoogleFonts.outfit(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey)),
               const SizedBox(height: 12),
@@ -91,7 +91,7 @@ class ComparisonScreen extends ConsumerWidget {
       width: 280,
       margin: const EdgeInsets.only(right: 1),
       decoration: BoxDecoration(
-        border: Border(left: BorderSide(color: Theme.of(context).dividerColor.withOpacity(0.1))),
+        border: Border(left: BorderSide(color: Theme.of(context).dividerColor.withValues(alpha: 0.1))),
       ),
       child: Column(
         children: [
@@ -111,7 +111,7 @@ class ComparisonScreen extends ConsumerWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
-                          BoxShadow(color: Colors.black.withOpacity(0.03), blurRadius: 20, offset: const Offset(0, 10)),
+                          BoxShadow(color: Colors.black.withValues(alpha: 0.03), blurRadius: 20, offset: const Offset(0, 10)),
                         ],
                       ),
                       child: gadget.imageUrl.isNotEmpty
@@ -135,7 +135,7 @@ class ComparisonScreen extends ConsumerWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
@@ -148,10 +148,15 @@ class ComparisonScreen extends ConsumerWidget {
           ),
           ...labels.map((label) {
             String value = '-';
-            if (label == 'Brand') value = gadget.brand;
-            else if (label == 'Price') value = '₹${gadget.price.toStringAsFixed(0)}';
-            else if (label == 'Rating') value = gadget.rating.toString();
-            else value = gadget.specs[label]?.toString() ?? '-';
+            if (label == 'Brand') {
+              value = gadget.brand;
+            } else if (label == 'Price') {
+              value = '₹${gadget.price.toStringAsFixed(0)}';
+            } else if (label == 'Rating') {
+              value = gadget.rating.toString();
+            } else {
+              value = gadget.specs[label]?.toString() ?? '-';
+            }
 
             return Container(
               height: 60,
@@ -159,7 +164,7 @@ class ComparisonScreen extends ConsumerWidget {
               alignment: Alignment.center,
               padding: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
-                border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor.withOpacity(0.05))),
+                border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor.withValues(alpha: 0.05))),
               ),
               child: Text(
                 value,

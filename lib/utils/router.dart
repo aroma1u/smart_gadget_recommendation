@@ -84,11 +84,11 @@ final routerProvider = Provider<GoRouter>((ref) {
     ],
   );
 
-  ref.listen(authStateChangesProvider, (_, __) {
+  ref.listen(authStateChangesProvider, (_, _) {
     router.refresh();
   });
 
-  ref.listen(mockBypassLoginProvider, (_, __) {
+  ref.listen(mockBypassLoginProvider, (_, _) {
     router.refresh();
   });
 

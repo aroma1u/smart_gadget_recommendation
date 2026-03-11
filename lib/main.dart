@@ -30,7 +30,7 @@ void main() async {
 }
 
 class NexaraApp extends ConsumerWidget {
-  const NexaraApp({Key? key}) : super(key: key);
+  const NexaraApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

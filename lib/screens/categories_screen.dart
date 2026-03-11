@@ -7,7 +7,7 @@ import '../utils/constants.dart';
 import '../widgets/gadget_card.dart';
 
 class CategoriesScreen extends ConsumerStatefulWidget {
-  const CategoriesScreen({Key? key}) : super(key: key);
+  const CategoriesScreen({super.key});
 
   @override
   ConsumerState<CategoriesScreen> createState() => _CategoriesScreenState();
@@ -34,7 +34,7 @@ class _CategoriesScreenState extends ConsumerState<CategoriesScreen> {
             width: 260,
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.surface,
-              border: Border(right: BorderSide(color: Theme.of(context).dividerColor.withOpacity(0.05))),
+              border: Border(right: BorderSide(color: Theme.of(context).dividerColor.withValues(alpha: 0.05))),
             ),
             child: ListView.separated(
               padding: const EdgeInsets.symmetric(vertical: 24),
@@ -52,7 +52,7 @@ class _CategoriesScreenState extends ConsumerState<CategoriesScreen> {
                       duration: const Duration(milliseconds: 200),
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
-                        color: isSelected ? Theme.of(context).colorScheme.primary.withOpacity(0.1) : Colors.transparent,
+                        color: isSelected ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1) : Colors.transparent,
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Row(

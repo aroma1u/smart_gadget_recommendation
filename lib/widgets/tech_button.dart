@@ -8,13 +8,13 @@ class TechButton extends StatelessWidget {
   final bool isLoading;
 
   const TechButton({
-    Key? key,
+    super.key,
     required this.onPressed,
     required this.text,
     this.icon,
     this.isPrimary = true,
     this.isLoading = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

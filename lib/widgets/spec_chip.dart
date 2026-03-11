@@ -6,11 +6,11 @@ class SpecChip extends StatelessWidget {
   final IconData? icon;
 
   const SpecChip({
-    Key? key,
+    super.key,
     required this.label,
     required this.value,
     this.icon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

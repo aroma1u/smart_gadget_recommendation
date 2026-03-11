@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 class MeshGradientAnimation extends StatefulWidget {
   final List<Color> colors;
-  const MeshGradientAnimation({Key? key, required this.colors}) : super(key: key);
+  const MeshGradientAnimation({super.key, required this.colors});
 
   @override
-  _MeshGradientAnimationState createState() => _MeshGradientAnimationState();
+  State<MeshGradientAnimation> createState() => _MeshGradientAnimationState();
 }
 
 class _MeshGradientAnimationState extends State<MeshGradientAnimation> with SingleTickerProviderStateMixin {
@@ -72,8 +72,8 @@ class _MeshPainter extends CustomPainter {
       final blobPaint = Paint()
         ..shader = RadialGradient(
           colors: [
-            colors[i].withOpacity(0.6),
-            colors[i].withOpacity(0.0),
+            colors[i].withValues(alpha: 0.6),
+            colors[i].withValues(alpha: 0.0),
           ],
           stops: const [0.0, 1.0],
         ).createShader(Rect.fromCircle(center: Offset(centerX, centerY), radius: size.width * 0.7));

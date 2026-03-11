@@ -8,8 +8,7 @@ class GadgetCard extends ConsumerStatefulWidget {
   final GadgetModel gadget;
   final VoidCallback onTap;
 
-  const GadgetCard({Key? key, required this.gadget, required this.onTap})
-      : super(key: key);
+  const GadgetCard({super.key, required this.gadget, required this.onTap});
 
   @override
   ConsumerState<GadgetCard> createState() => _GadgetCardState();
@@ -46,10 +45,10 @@ class _GadgetCardState extends ConsumerState<GadgetCard> {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: isDark ? Colors.white.withOpacity(0.05) : Colors.grey[50],
+                          color: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey[50],
                           gradient: LinearGradient(
                             colors: isDark 
-                              ? [Colors.white.withOpacity(0.02), Colors.white.withOpacity(0.08)]
+                              ? [Colors.white.withValues(alpha: 0.02), Colors.white.withValues(alpha: 0.08)]
                               : [Colors.grey[50]!, Colors.grey[200]!],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
@@ -230,7 +229,7 @@ class _GadgetCardState extends ConsumerState<GadgetCard> {
                   ? loadingProgress.cumulativeBytesLoaded /
                       loadingProgress.expectedTotalBytes!
                   : null,
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.5),
             ),
           );
         },
@@ -258,9 +257,9 @@ class _GlassBadge extends StatelessWidget {
         child: Container(
           padding: padding ?? const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.white.withOpacity(0.1), width: 1),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.1), width: 1),
           ),
           child: child,
         ),
@@ -286,7 +285,7 @@ class _CompareButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: isComparing 
             ? Theme.of(context).colorScheme.primary 
-            : Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            : Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Icon(
@@ -325,13 +324,13 @@ class _ImagePlaceholder extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.08),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.08),
             shape: BoxShape.circle,
           ),
           child: Icon(
             _getCategoryIcon(),
             size: 36,
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.5),
           ),
         ),
         const SizedBox(height: 8),

@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -8,7 +7,7 @@ import '../providers/gadget_provider.dart';
 import '../models/gadget_model.dart';
 
 class RecommendationResultsScreen extends ConsumerWidget {
-  const RecommendationResultsScreen({Key? key}) : super(key: key);
+  const RecommendationResultsScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -135,7 +134,7 @@ class _RecommendationResultCard extends ConsumerWidget {
                     width: 100,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: isDark ? Colors.white.withOpacity(0.05) : Colors.grey[100],
+                      color: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey[100],
                       borderRadius: BorderRadius.circular(16),
                     ),
                     clipBehavior: Clip.antiAlias,
@@ -194,9 +193,9 @@ class _RecommendationResultCard extends ConsumerWidget {
                   return Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary.withOpacity(0.08),
+                      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.08),
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Theme.of(context).colorScheme.primary.withOpacity(0.1)),
+                      border: Border.all(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)),
                     ),
                     child: Text(
                       feature.trim(),
@@ -210,9 +209,9 @@ class _RecommendationResultCard extends ConsumerWidget {
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: isDark ? Colors.white.withOpacity(0.03) : Colors.grey[50],
+                  color: isDark ? Colors.white.withValues(alpha: 0.03) : Colors.grey[50],
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: isDark ? Colors.white.withOpacity(0.05) : Colors.grey[200]!),
+                  border: Border.all(color: isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey[200]!),
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -237,7 +236,7 @@ class _RecommendationResultCard extends ConsumerWidget {
                       onPressed: () => context.push('/details/$gId'),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 12),
-                        backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                        backgroundColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
                         foregroundColor: Theme.of(context).colorScheme.primary,
                       ),
                       child: const Text('View Details', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -294,7 +293,7 @@ class _RecommendationResultCard extends ConsumerWidget {
         child: Image.asset(
           url,
           fit: BoxFit.contain,
-          errorBuilder: (_, __, ___) => _RecImagePlaceholder(brand: rec['brand']?.toString() ?? ''),
+          errorBuilder: (_, _, _) => _RecImagePlaceholder(brand: rec['brand']?.toString() ?? ''),
         ),
       );
     } else {
@@ -312,11 +311,11 @@ class _RecommendationResultCard extends ConsumerWidget {
                     ? loadingProgress.cumulativeBytesLoaded /
                         loadingProgress.expectedTotalBytes!
                     : null,
-                color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+                color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.5),
               ),
             );
           },
-          errorBuilder: (_, __, ___) => _RecImagePlaceholder(brand: rec['brand']?.toString() ?? ''),
+          errorBuilder: (_, _, _) => _RecImagePlaceholder(brand: rec['brand']?.toString() ?? ''),
         ),
       );
     }
@@ -332,7 +331,7 @@ class _RecImagePlaceholder extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(Icons.devices_rounded, size: 32, color: Theme.of(context).colorScheme.primary.withOpacity(0.3)),
+        Icon(Icons.devices_rounded, size: 32, color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
         const SizedBox(height: 4),
         Text(
           brand,

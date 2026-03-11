@@ -41,7 +41,7 @@ class AppTheme {
       dividerTheme: const DividerThemeData(color: lightBorder, thickness: 1),
       textTheme: GoogleFonts.interTextTheme(ThemeData.light().textTheme),
       appBarTheme: AppBarTheme(
-        backgroundColor: lightSurface.withOpacity(0.8),
+        backgroundColor: lightSurface.withValues(alpha: 0.8),
         elevation: 0,
         centerTitle: true,
         iconTheme: const IconThemeData(color: Color(0xFF09090B)),
@@ -108,7 +108,7 @@ class AppTheme {
       dividerTheme: const DividerThemeData(color: darkBorder, thickness: 1),
       textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       appBarTheme: AppBarTheme(
-        backgroundColor: darkBackground.withOpacity(0.8),
+        backgroundColor: darkBackground.withValues(alpha: 0.8),
         elevation: 0,
         centerTitle: true,
         iconTheme: const IconThemeData(color: Colors.white),

@@ -9,8 +9,7 @@ import '../providers/ai_recommendation_provider.dart';
 class RecommendationFormScreen extends ConsumerStatefulWidget {
   final String? initialCategory;
 
-  const RecommendationFormScreen({Key? key, this.initialCategory})
-      : super(key: key);
+  const RecommendationFormScreen({super.key, this.initialCategory});
 
   @override
   ConsumerState<RecommendationFormScreen> createState() =>
@@ -237,7 +236,7 @@ class _RecommendationFormScreenState
                 fontSize: 13, fontWeight: FontWeight.bold, color: Colors.grey)),
         const SizedBox(height: 8),
         DropdownButtonFormField<String>(
-          value: value,
+          initialValue: value,
           onChanged: onChanged,
           items: items
               .map((e) => DropdownMenuItem(
@@ -302,7 +301,7 @@ class _RecommendationFormScreenState
           decoration: InputDecoration(
             hintText: hint,
             hintStyle:
-                TextStyle(color: Theme.of(context).hintColor.withOpacity(0.5)),
+                TextStyle(color: Theme.of(context).hintColor.withValues(alpha: 0.5)),
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           ),
