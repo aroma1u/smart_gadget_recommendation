@@ -15,7 +15,7 @@ A multi-stage build that:
 
 ```dockerfile
 # Stage 1: Build Stage
-FROM instruments/flutter:stable AS build
+FROM ghcr.io/cirruslabs/flutter:stable AS build
 WORKDIR /app
 COPY . .
 RUN flutter pub get

@@ -1,5 +1,5 @@
 # Stage 1: Build Flutter Web
-FROM instruments/flutter:stable AS build
+FROM ghcr.io/cirruslabs/flutter:stable AS build
 
 # Set working directory
 WORKDIR /app
