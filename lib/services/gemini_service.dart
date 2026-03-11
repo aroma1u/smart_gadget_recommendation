@@ -13,8 +13,8 @@ class GeminiService {
     try {
       final apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
       if (apiKey.isNotEmpty) {
-        // Updated to an available model on this API key's project
-        _model = GenerativeModel(model: 'gemini-2.5-flash', apiKey: apiKey);
+        // Using a valid stable model: gemini-1.5-flash
+        _model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: apiKey);
       }
     } catch (_) {
       // dotenv not initialized
