@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  smart-gadget-web:
+    image: akhi1babu/smart-gadget-flutter:latest
+    container_name: smart-gadget-app
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge

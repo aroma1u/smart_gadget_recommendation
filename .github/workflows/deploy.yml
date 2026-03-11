@@ -1,0 +1,65 @@
+name: CI/CD - Build & Deploy to AWS EC2 (Flutter Web)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create .env file
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > .env
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/smart-gadget-flutter:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            mkdir -p ~/smart-gadget-flutter
+
+            cat > ~/smart-gadget-flutter/compose.yaml << 'EOF'
+            version: "3.8"
+            services:
+              smart-gadget-web:
+                image: ${{ secrets.DOCKER_USERNAME }}/smart-gadget-flutter:latest
+                container_name: smart-gadget-app
+                restart: unless-stopped
+                ports:
+                  - "80:80"
+                networks:
+                  - webnet
+            networks:
+              webnet:
+                driver: bridge
+            EOF
+
+            cd ~/smart-gadget-flutter
+            docker pull ${{ secrets.DOCKER_USERNAME }}/smart-gadget-flutter:latest
+            docker compose down || true
+            docker compose up -d
+            docker image prune -f
+            echo "Deployment complete!"
