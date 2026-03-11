@@ -1,0 +1,55 @@
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\categories_screen.dart|37|86|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\categories_screen.dart|55|83|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|21|79|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|94|79|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|114|57|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|138|66|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|CURLY_BRACES_IN_FLOW_CONTROL_STRUCTURES|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|153|42|46|Statements in an if should be enclosed in a block.
+INFO|LINT|CURLY_BRACES_IN_FLOW_CONTROL_STRUCTURES|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|154|41|33|Statements in an if should be enclosed in a block.
+INFO|LINT|CURLY_BRACES_IN_FLOW_CONTROL_STRUCTURES|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|155|18|47|Statements in an if should be enclosed in a block.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\comparison_screen.dart|163|89|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\details_screen.dart|222|74|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\details_screen.dart|269|58|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\details_screen.dart|297|78|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\details_screen.dart|340|78|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|47|82|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|60|30|2|Unnecessary use of multiple underscores.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|91|41|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|97|80|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|102|80|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|112|49|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|114|68|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|349|55|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|354|57|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|355|71|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\home_screen.dart|370|63|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_form_screen.dart|304|62|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|137|52|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|196|68|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|198|87|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|212|48|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|214|67|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|239|80|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|296|29|2|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|296|33|3|Unnecessary use of multiple underscores.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|314|62|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|318|29|2|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|318|33|3|Unnecessary use of multiple underscores.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\screens\\recommendation_results_screen.dart|334|92|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|AVOID_PRINT|C:\\smart_gadget_flutter\\lib\\services\\gemini_service.dart|234|7|5|Don't invoke 'print' in production code.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\utils\\router.dart|87|44|2|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\smart_gadget_flutter\\lib\\utils\\router.dart|91|43|2|Unnecessary use of multiple underscores.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\utils\\theme.dart|44|39|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\utils\\theme.dart|111|41|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|48|56|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|51|47|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|51|79|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|232|60|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|260|33|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|262|52|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|288|53|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|327|58|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\gadget_card.dart|333|58|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|LIBRARY_PRIVATE_TYPES_IN_PUBLIC_API|C:\\smart_gadget_flutter\\lib\\widgets\\mesh_gradient.dart|9|3|27|Invalid use of a private type in a public API.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\mesh_gradient.dart|75|23|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\smart_gadget_flutter\\lib\\widgets\\mesh_gradient.dart|76|23|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
