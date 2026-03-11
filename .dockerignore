@@ -1,7 +1,6 @@
 .dart_tool/
 .git/
 .idea/
-build/
 ios/
 android/
 linux/
@@ -10,7 +9,7 @@ windows/
 test/
 *.iml
 .metadata
-pubspec.lock
 .flutter-plugins
 .flutter-plugins-dependencies
 .env
+build_log.txt
