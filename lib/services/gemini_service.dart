@@ -82,7 +82,7 @@ class GeminiService {
         }
       }
       contextString +=
-          "\nIMPORTANT: The list above is our current stock, but you are ENCOURAGED to recommend brand new, cutting-edge devices from your own knowledge (e.g. latest releases not yet in stock) if they better fit the user's profile. Return exactly 5 recommendations in total. For devices from our stock, use their exact 'id' and 'imageUrl'. For brand new devices not in stock, generate a unique arbitrary 'id' (e.g., 'ai_new_1') and find a realistic high-quality Unsplash image URL. \n\nSAFE IMAGE POOL (USE THESE IDs IF YOU DON'T HAVE A SPECIFIC GUARANTEED LINK):\n- Smartphones: https://images.unsplash.com/photo-1511707171634-5f897ff02aa9\n- Laptops: https://images.unsplash.com/photo-1496181133206-80ce9b88a853\n- Tablets: https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0\n- Smartwatches: https://images.unsplash.com/photo-1523275335684-37898b6baf30\n- Headphones: https://images.unsplash.com/photo-1505740420928-5e560c06d30e\n- Cameras: https://images.unsplash.com/photo-1516035069371-29a1b244ec32\n- Smart Home: https://images.unsplash.com/photo-1558296716-43d94c92471b";
+          "\nIMPORTANT: The list above is our current stock, but you MUST strongly prioritize recommending brand new, cutting-edge devices from your own knowledge (e.g. latest 2024/2025 releases not yet in stock) to ensure the user gets the most up-to-date recommendations. DO NOT recommend old or outdated devices. Return exactly 5 recommendations in total. For devices from our stock, use their exact 'id' and 'imageUrl'. For brand new devices not in stock, generate a unique arbitrary 'id' (e.g., 'ai_new_1') and find a realistic high-quality Unsplash image URL. \n\nSAFE IMAGE POOL (USE THESE IDs IF YOU DON'T HAVE A SPECIFIC GUARANTEED LINK):\n- Smartphones: https://images.unsplash.com/photo-1511707171634-5f897ff02aa9\n- Laptops: https://images.unsplash.com/photo-1496181133206-80ce9b88a853\n- Tablets: https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0\n- Smartwatches: https://images.unsplash.com/photo-1523275335684-37898b6baf30\n- Headphones: https://images.unsplash.com/photo-1505740420928-5e560c06d30e\n- Cameras: https://images.unsplash.com/photo-1516035069371-29a1b244ec32\n- Smart Home: https://images.unsplash.com/photo-1558296716-43d94c92471b";
     }
 
     final prompt =
@@ -97,7 +97,7 @@ class GeminiService {
 
       $contextString
 
-      Recommend the absolute best devices that perfectly match this profile. You may prioritize the absolute latest, most cutting-edge models available on the market today or in recent announcements, EVEN IF THEY ARE NOT IN THE PROVIDED DATABASE. For all devices, use your extensive internal knowledge to generate a fully accurate, extremely detailed GSMArena-style specification sheet. 
+      Recommend the absolute latest and best devices that perfectly match this profile. DO NOT recommend any outdated or older generation gadgets. You MUST prioritize the absolute latest, most cutting-edge models available on the market today (e.g., from 2024 or 2025 releases) or in recent announcements, EVEN IF THEY ARE NOT IN THE PROVIDED DATABASE. For all devices, use your extensive internal knowledge to generate a fully accurate, extremely detailed GSMArena-style specification sheet. 
 
       For items selected from the provided stock list, your output "id", "name", "brand", "price" fields must exactly match the list.
       For completely new items not in the list, invent a unique "id" and estimate the realistic INR "price" (without ₹ sign).
